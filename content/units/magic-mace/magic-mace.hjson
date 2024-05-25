@@ -1,0 +1,44 @@
+type: mech
+name: Mace Magician
+description: A basic Mace with magic powers with a Defense level of 7 and an attack level of 2.
+speed: 0.5
+flying: false
+canBoost: false
+health: 550
+hitSize: 10
+armor: 4
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 1
+    name: magic-mace-idk
+    reload: 23
+    rotate: false
+    mirror: true
+	top: false
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 35
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 3
+	 boilTime: 10
+	 knockback: 0.3
+     damage: 30
+	 color: A4B8FA
+	 hitEffect: shockwave
+	}
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 1
+    max: 5
+    reload: 10
+    range: 10
+  }
+]

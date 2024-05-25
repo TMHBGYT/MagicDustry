@@ -1,0 +1,66 @@
+type: mech
+name: Insane Mace Magician
+description: A Mace with magic powers with a Defense level of 11 and an attack level of 6.Abilities: Homing magic,3 shot,flying and shield piercing magic.
+speed: 0.5
+flying: false
+canBoost: true
+health: 580
+hitSize: 10
+armor: 4
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 1
+    name: magic-mace-idk
+    reload: 43
+    rotate: false
+    mirror: true
+	top: false
+	shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 8
+    }
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 35
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 9
+	 boilTime: 10
+	 knockback: 1
+     damage: 80
+	 homingPower: 0.6
+	 color: A4B8FA
+	 peirce: true
+	 pierceCap: 1
+	 pierceDamageFactor: 75
+	 hitEffect: shockwave
+	}
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 5
+    max: 10
+    reload: 10
+    range: 10
+  }
+  {
+    type: ShieldArcAbility
+    max: 580
+    regen: 0.06
+    angle: 65
+    cooldown: 300
+    whenShooting: false
+    width: 4
+    x: 0
+    y: -2
+    color: A4B8FA
+	radius: 35
+  }
+]

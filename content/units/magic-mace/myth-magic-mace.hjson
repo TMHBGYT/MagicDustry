@@ -1,0 +1,50 @@
+type: mech
+name: Myth Mace Magician
+description: A Mace with magic powers with a Defense level of 10 and an attack level of 5.Abilities: Homing magic and 2 shot.
+speed: 0.5
+flying: false
+canBoost: false
+health: 570
+hitSize: 10
+armor: 4
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 1
+    name: magic-mace-idk
+    reload: 34
+    rotate: false
+    mirror: true
+	top: false
+	shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 7
+    }
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 35
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 8
+	 boilTime: 10
+	 knockback: 0.9
+     damage: 70
+	 homingPower: 0.5
+	 color: A4B8FA
+	 hitEffect: shockwave
+	}
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 4
+    max: 9
+    reload: 10
+    range: 10
+  }
+]

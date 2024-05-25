@@ -1,0 +1,49 @@
+type: mech
+name: Expert Dagger Magician
+description: A Dagger with magic powers with a Defense level of 2 and an attack level of 3.Abilities: 3 Shot,super speed and flight.
+speed: 0.9
+flying: false
+canBoost: true
+health: 230
+hitSize: 8
+armor: 0
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 2
+    name: magic-dagger-idk
+    reload: 43
+    rotate: false
+    mirror: true
+	top: false
+	shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 4
+    }
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 50
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 5
+	 boilTime: 10
+	 knockback: 0.6
+     damage: 40
+	 color: A4B8FA
+	 hitEffect: shockwave
+	}
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 1
+    max: 5
+    reload: 10
+    range: 10
+  }
+]

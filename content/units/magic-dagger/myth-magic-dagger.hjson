@@ -1,0 +1,77 @@
+type: mech
+name: Myth Dagger Magician
+description: A Dagger with magic powers with a Defense level of 3 and an attack level of 4.Abilities: 3 Shot,super speed,flight and one sided beam magic.
+speed: 0.9
+flying: false
+canBoost: true
+health: 250
+hitSize: 8
+armor: 0
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 2
+    name: magic-dagger-idk
+    reload: 43
+    rotate: false
+    mirror: false
+	top: false
+	shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 4
+    }
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 50
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 7
+	 boilTime: 10
+	 knockback: 0.6
+     damage: 50
+	 color: A4B8FA
+	 hitEffect: shockwave
+	}
+    }
+    {
+    x: -4
+    y: 2
+    name: magic-dagger-idk-2
+    reload: 110
+    rotate: false
+    mirror: false
+	top: false
+    bullet: {
+      speed: 2
+	  lifetime: 140
+	  collides: true
+      collidesTiles: false
+      collidesAir: true
+      collidesGround: true
+      type: ContinuousFlameBulletType
+      colors: [A4B8FA, ffffff]
+      length: 60
+      width: 2
+      drawFlare: false
+      damageInterval: 15
+      damage: 125
+      pierceArmor: false
+      pierceCap: 1
+      hitEffect: shockwave
+      despawnEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 1
+    max: 5
+    reload: 10
+    range: 10
+  }
+]

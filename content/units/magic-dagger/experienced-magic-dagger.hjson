@@ -1,0 +1,49 @@
+type: mech
+name: Experinced Dagger Magician
+description: A Dagger with magic powers with a Defense level of 1 and an attack level of 2.Abilities: 2 Shot and speed.
+speed: 0.7
+flying: false
+canBoost: false
+health: 180
+hitSize: 8
+armor: 0
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 2
+    name: magic-dagger-idk
+    reload: 31
+    rotate: false
+    mirror: true
+	top: false
+	shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 4
+    }
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 50
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 4
+	 boilTime: 10
+	 knockback: 0.4
+     damage: 30
+	 color: A4B8FA
+	 hitEffect: shockwave
+	}
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 1
+    max: 5
+    reload: 10
+    range: 10
+  }
+]

@@ -1,0 +1,91 @@
+type: mech
+name: Insanr Dagger Magician
+description: A Dagger with magic powers with a Defense level of 4 and an attack level of 5.Abilities: 3 Shot,super speed,flight,sided beam magic,homing magic,better heal time and shield.
+speed: 0.9
+flying: false
+canBoost: true
+health: 280
+hitSize: 8
+armor: 0
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 2
+    name: magic-dagger-idk
+    reload: 45
+    rotate: false
+    mirror: false
+	top: false
+	shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 4
+    }
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 50
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 8
+	 boilTime: 10
+	 knockback: 0.8
+     damage: 60
+	 color: A4B8FA
+	 homingPower: 0.4
+	 hitEffect: shockwave
+	}
+    }
+    {
+    x: -4
+    y: 2
+    name: magic-dagger-idk-2
+    reload: 110
+    rotate: false
+    mirror: false
+	top: false
+    bullet: {
+      speed: 2
+	  lifetime: 140
+	  collides: true
+      collidesTiles: false
+      collidesAir: true
+      collidesGround: true
+      type: ContinuousFlameBulletType
+      colors: [A4B8FA, ffffff]
+      length: 60
+      width: 2
+      drawFlare: false
+      damageInterval: 15
+      damage: 135
+      pierceArmor: true
+      pierceCap: 2
+      hitEffect: shockwave
+      despawnEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 2
+    max: 6
+    reload: 9
+    range: 11
+  }
+  {
+    type: ShieldArcAbility
+    max: 280
+    regen: 0.03
+    angle: 65
+    cooldown: 300
+    whenShooting: false
+    width: 4
+    x: 0
+    y: -4
+    color: A4B8FA
+	radius: 35
+  }
+]

@@ -1,0 +1,45 @@
+type: mech
+name: Expert Mace Magician
+description: A Mace with magic powers with a Defense level of 9 and an attack level of 4.Abilities: Homing magic.
+speed: 0.5
+flying: false
+canBoost: false
+health: 570
+hitSize: 10
+armor: 4
+outlineColor: 44413c
+mechLegColor: 44413c
+  weapons: [
+    {
+    x: 4
+    y: 1
+    name: magic-mace-idk
+    reload: 25
+    rotate: false
+    mirror: true
+	top: false
+	bullet: {
+     type: LiquidBulletType
+	 speed: 3
+	 lifetime: 35
+	 liquid: magic
+	 puddleSize: 0
+	 orbSize: 7
+	 boilTime: 10
+	 knockback: 0.8
+     damage: 60
+	 homingPower: 0.4
+	 color: A4B8FA
+	 hitEffect: shockwave
+	}
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 4
+    max: 9
+    reload: 10
+    range: 10
+  }
+]
