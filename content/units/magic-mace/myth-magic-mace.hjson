@@ -35,6 +35,7 @@ mechLegColor: 44413c
      damage: 70
 	 homingPower: 0.5
 	 color: A4B8FA
+	 despawnSound: small-magic-hitsound	 
 	 hitEffect: shockwave
 	}
   }

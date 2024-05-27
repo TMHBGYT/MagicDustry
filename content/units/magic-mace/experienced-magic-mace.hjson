@@ -29,6 +29,7 @@ mechLegColor: 44413c
 	 knockback: 0.7
      damage: 50
 	 color: A4B8FA
+	 despawnSound: small-magic-hitsound	 
 	 hitEffect: shockwave
 	}
   }

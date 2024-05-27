@@ -1,5 +1,5 @@
 type: mech
-name: Insane Dagger Magician
+name: Insanr Dagger Magician
 description: A Dagger with magic powers with a Defense level of 4 and an attack level of 5.Abilities: 3 Shot,super speed,flight,sided beam magic,homing magic,better heal time and shield.
 speed: 0.9
 flying: false
@@ -35,6 +35,7 @@ mechLegColor: 44413c
      damage: 60
 	 color: A4B8FA
 	 homingPower: 0.4
+	 hitSound: small-magic-hitsound	 
 	 hitEffect: shockwave
 	}
     }
@@ -62,9 +63,10 @@ mechLegColor: 44413c
       damage: 135
       pierceArmor: true
       pierceCap: 2
-      hitEffect: shockwave
-      despawnEffect: none
-    }
+      absorbable: true
+	  despawnEffect: none
+      hitSound: small-magic-hitsound
+	}
   }
 ]
 abilities: [

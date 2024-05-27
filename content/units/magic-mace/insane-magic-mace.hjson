@@ -1,6 +1,6 @@
 type: mech
 name: Insane Mace Magician
-description: A Mace with magic powers with a Defense level of 11 and an attack level of 6.Abilities: Homing magic,3 shot,flying and shield piercing magic.
+description: A Mace with magic powers with a Defense level of 11 and an attack level of 6.Abilities: Homing magic,3 shot,flying,a shield and shield piercing magic.
 speed: 0.5
 flying: false
 canBoost: true
@@ -39,6 +39,8 @@ mechLegColor: 44413c
 	 pierceCap: 1
 	 pierceDamageFactor: 75
 	 hitEffect: shockwave
+	 despawnSound: small-magic-hitsound	 
+	 absorbable: false
 	}
   }
 ]
